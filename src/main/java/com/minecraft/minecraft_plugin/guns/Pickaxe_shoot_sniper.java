@@ -1,10 +1,10 @@
 package com.minecraft.minecraft_plugin.guns;
 
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Snowball;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerItemHeldEvent;
 import org.bukkit.inventory.ItemStack;
@@ -12,14 +12,13 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 import org.bukkit.util.Vector;
 
-import java.util.HashMap;
-import java.util.UUID;
+public class Pickaxe_shoot_sniper extends Weapon implements Listener {
 
-public class Pickaxe_shoot_sniper implements Listener {
-
-    private final HashMap<UUID, Long> cooldowns = new HashMap<>();
-    private static final long SHOOT_COOLDOWN = 2500;
     boolean zoomed = false;
+
+    public Pickaxe_shoot_sniper() {
+        super(2500, 8, 6000, 16, Material.EGG);
+    }
 
     @EventHandler
     public void onPickaxeInteract(PlayerInteractEvent event) {
@@ -40,7 +39,7 @@ public class Pickaxe_shoot_sniper implements Listener {
                 case RIGHT_CLICK_AIR:
                 case RIGHT_CLICK_BLOCK:
                     if (canShoot(player)) {
-                        shootSniperSnowball(player);
+                        shootProjectile(player, 10, Snowball.class);
                         setCooldown(player);
                     }
                     break;
@@ -61,25 +60,17 @@ public class Pickaxe_shoot_sniper implements Listener {
         }
     }
 
-    @EventHandler
-    public void onSnowballHit(EntityDamageByEntityEvent event) {
-        if (event.getDamager() instanceof Snowball) {
-            Snowball snowball = (Snowball) event.getDamager();
-
-            if ("SniperSnowball".equals(snowball.getCustomName()) && snowball.getShooter() instanceof Player) {
-                event.setDamage(16.0);
-            }
-        }
-    }
-
-    private void shootSniperSnowball(Player player) {
+    @Override
+    public void shootProjectile(Player player, double travelspeed, Class projectile) {
         Snowball snowball = player.launchProjectile(Snowball.class);
-
-        Vector direction = player.getLocation().getDirection().multiply(10);
+        Vector direction = player.getLocation().getDirection().multiply(travelspeed);
         snowball.setVelocity(direction);
         snowball.setGravity(false);
         snowball.setShooter(player);
-        snowball.setCustomName("SniperSnowball");
+        snowball.setCustomName("CustomBullet");
+        super.shotsFired += 1;
+        removeBullet(player);
+        magazineNotEmpty(player);
     }
 
     private void activateZoom(Player player) {
@@ -90,21 +81,6 @@ public class Pickaxe_shoot_sniper implements Listener {
     private void deactivateZoom(Player player) {
         zoomed = false;
         player.removePotionEffect(PotionEffectType.SLOWNESS);
-    }
-
-    private boolean canShoot(Player player) {
-        UUID playerId = player.getUniqueId();
-        if (!cooldowns.containsKey(playerId)) {
-            return true;
-        }
-
-        long lastShotTime = cooldowns.get(playerId);
-        return (System.currentTimeMillis() - lastShotTime) >= SHOOT_COOLDOWN;
-    }
-
-    private void setCooldown(Player player) {
-        UUID playerId = player.getUniqueId();
-        cooldowns.put(playerId, System.currentTimeMillis());
     }
 }
 
