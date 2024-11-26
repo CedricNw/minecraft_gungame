@@ -87,7 +87,7 @@ public class Weapon implements Listener {
 
     public void magazineNotEmpty(Player player) {
         UUID playerId = player.getUniqueId();
-        if(MAGAZINE_SIZE < shotsFired) {
+        if(MAGAZINE_SIZE <= shotsFired) {
             setReload(player);
         } else {
             reloads.remove(playerId);

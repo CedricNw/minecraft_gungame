@@ -9,7 +9,77 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d46bdd11-521a-4b2e-9be9-4cc49263103a" name="Changes" comment="" />
+    <list default="true" id="d46bdd11-521a-4b2e-9be9-4cc49263103a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/minecraft/minecraft_plugin/commands/KitFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/minecraft/minecraft_plugin/guns/Axe_shoot_handgun.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/minecraft/minecraft_plugin/guns/Maze_granade_thrower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/minecraft/minecraft_plugin/other/Granade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/server/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/plugins/.paper-remapped/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/plugins/.paper-remapped/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/plugins/.paper-remapped/minecraft_plugin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/server/plugins/.paper-remapped/minecraft_plugin.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/plugins/minecraft_plugin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/server/plugins/minecraft_plugin.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/usercache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/advancements/a48dc127-755c-47a8-a4a6-620e0c0c33a6.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/advancements/a48dc127-755c-47a8-a4a6-620e0c0c33a6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/data/raids.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/data/random_sequences.dat" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/data/random_sequences.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/entities/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/entities/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/entities/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/entities/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/entities/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/entities/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/entities/r.1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/entities/r.1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/entities/r.1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/entities/r.1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/playerdata/a48dc127-755c-47a8-a4a6-620e0c0c33a6.dat" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/playerdata/a48dc127-755c-47a8-a4a6-620e0c0c33a6.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/playerdata/a48dc127-755c-47a8-a4a6-620e0c0c33a6.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/playerdata/a48dc127-755c-47a8-a4a6-620e0c0c33a6.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/poi/r.1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/poi/r.1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/region/r.-1.-2.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.-1.-2.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/region/r.0.1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.0.1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/region/r.1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/region/r.1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/region/r.1.1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.1.1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/region/r.2.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.2.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/region/r.2.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/region/r.2.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world/stats/a48dc127-755c-47a8-a4a6-620e0c0c33a6.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/world/stats/a48dc127-755c-47a8-a4a6-620e0c0c33a6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_nether/DIM-1/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_nether/DIM-1/data/raids.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_nether/DIM-1/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_nether/DIM-1/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_nether/DIM-1/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_nether/DIM-1/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_nether/DIM-1/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_nether/DIM-1/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_nether/DIM-1/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_nether/DIM-1/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_nether/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_nether/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_nether/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_nether/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_nether/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_nether/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/data/raids_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/data/raids_end.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/entities/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/entities/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/entities/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/entities/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/entities/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/entities/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/entities/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/entities/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_the_end/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_the_end/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/world_the_end/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/server/world_the_end/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minecraft/minecraft_plugin/Minecraft_plugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minecraft/minecraft_plugin/Minecraft_plugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minecraft/minecraft_plugin/commands/Kit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minecraft/minecraft_plugin/commands/Kit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minecraft/minecraft_plugin/guns/Hoe_shoot_snowball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minecraft/minecraft_plugin/guns/Hoe_shoot_snowball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minecraft/minecraft_plugin/guns/Pickaxe_shoot_sniper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minecraft/minecraft_plugin/guns/Pickaxe_shoot_sniper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minecraft/minecraft_plugin/guns/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minecraft/minecraft_plugin/guns/Weapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/minecraft/minecraft_plugin/Minecraft_plugin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/minecraft/minecraft_plugin/Minecraft_plugin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/minecraft/minecraft_plugin/guns/Hoe_shoot_snowball.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/minecraft/minecraft_plugin/guns/Hoe_shoot_snowball.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/minecraft/minecraft_plugin/guns/Pickaxe_shoot_sniper$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/minecraft/minecraft_plugin/guns/Pickaxe_shoot_sniper$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/minecraft/minecraft_plugin/guns/Pickaxe_shoot_sniper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/minecraft/minecraft_plugin/guns/Pickaxe_shoot_sniper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/minecraft/minecraft_plugin/guns/Shovel_shoot_rocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/minecraft/minecraft_plugin/guns/Shovel_shoot_rocket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,17 +112,19 @@
     &quot;JAR Application.start-server.executor&quot;: &quot;Run&quot;,
     &quot;Maven.minecraft_plugin [package].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Games/minecraft_server/self-coded-plugin/minecraft_plugin&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Games/minecraft_server/self-coded-plugin/minecraft_gungame&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -65,7 +137,7 @@
     <configuration name="start-server" type="JarApplication">
       <option name="JAR_PATH" value="$PROJECT_DIR$/server/paper-1.21.1.jar" />
       <option name="PROGRAM_PARAMETERS" value="nogui" />
-      <option name="WORKING_DIRECTORY" value="D:\Games\minecraft_server\self-coded-plugin\minecraft_plugin\server" />
+      <option name="WORKING_DIRECTORY" value="D:\Games\minecraft_server\self-coded-plugin\minecraft_gungame\server" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="BuildArtifacts" enabled="true">
@@ -94,10 +166,24 @@
       <workItem from="1732380597663" duration="3446000" />
       <workItem from="1732401973305" duration="7938000" />
       <workItem from="1732519945901" duration="392000" />
+      <workItem from="1732520637047" duration="4780000" />
+      <workItem from="1732548564165" duration="9686000" />
+      <workItem from="1732571034121" duration="8190000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

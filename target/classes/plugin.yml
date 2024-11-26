@@ -2,4 +2,8 @@ name: minecraft_plugin
 version: "1.0"
 main: com.minecraft.minecraft_plugin.Minecraft_plugin
 api-version: "1.21"
-description: Spieler schießen Schneebälle mit einer Harke
+description: Waffen added into Minecraft
+commands:
+  kit:
+    description: Gibt dem Spieler ein bestimmtes Kit.
+    usage: /kit <kit-name>

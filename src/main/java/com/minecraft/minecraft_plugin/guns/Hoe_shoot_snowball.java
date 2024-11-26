@@ -14,7 +14,7 @@ import static org.bukkit.event.block.Action.RIGHT_CLICK_BLOCK;
 public class Hoe_shoot_snowball extends Weapon implements Listener {
 
     public Hoe_shoot_snowball() {
-        super(0, 30, 2500, 2.0, Material.SNOWBALL);
+        super(0, 30, 2500, 2.0, Material.ARROW);
     }
 
     @EventHandler

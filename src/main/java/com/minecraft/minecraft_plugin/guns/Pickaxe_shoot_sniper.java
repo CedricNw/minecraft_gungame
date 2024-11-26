@@ -17,7 +17,7 @@ public class Pickaxe_shoot_sniper extends Weapon implements Listener {
     boolean zoomed = false;
 
     public Pickaxe_shoot_sniper() {
-        super(2500, 8, 6000, 16, Material.EGG);
+        super(2500, 8, 6000, 16, Material.FLINT);
     }
 
     @EventHandler
